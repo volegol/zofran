@@ -36,6 +36,7 @@
                     disableKeyboardShortcuts: true,
                     disableVideoTagContextMenu: true,
                     exitFullscreenOnEnd: false,
+                    
                     //height: $(window).innerHeight(),
                     language: "tr-TR",
                     //persistConfig: false,
@@ -46,9 +47,9 @@
                     },*/
                     strings: {
                         "tr-TR": {
-                            back_to_live: "CanlÃƒâ€Ã‚Â± yayÃƒâ€Ã‚Â±na geri dÃƒÆ’Ã‚Â¶n",
-                            live: "CanlÃƒâ€Ã‚Â± | TRGoals",
-                            playback_not_supported: "TarayÃƒâ€Ã‚Â±cÃƒâ€Ã‚Â±nÃƒâ€Ã‚Â±z bu ortamÃƒâ€Ã‚Â± oynatamÃƒâ€Ã‚Â±yor, lÃƒÆ’Ã‚Â¼tfen gÃƒÆ’Ã‚Â¼ncel bir tarayÃƒâ€Ã‚Â±cÃƒâ€Ã‚Â± ile deneyiniz."
+                            back_to_live: "CanlÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â± yayÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â±na geri dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶n",
+                            live: "CanlÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â± | TRGoals",
+                            playback_not_supported: "TarayÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â±cÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â±nÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â±z bu ortamÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â± oynatamÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â±yor, lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼tfen gÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼ncel bir tarayÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â±cÃƒÆ’Ã¢â‚¬ÂÃƒâ€šÃ‚Â± ile deneyiniz."
                         },
                     },
                     width: '100%',
@@ -79,6 +80,9 @@
                     skipOffset: 5,
                     skipText: "Reklami gec",
                     skipTextN: "Reklami gecmek icin %d saniye kaldi",
+                     playback: {
+                        playInline: true,
+                    },
                 }, window.config.adv);
                 window.app.clappr.instance = new Clappr.Player(window.app.extend(window.app.clappr.options, window.app.extend(window.config.adv, {
                     chromeless: chromeless,
